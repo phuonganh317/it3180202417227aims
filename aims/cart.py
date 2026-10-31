@@ -28,7 +28,9 @@ class Cart:
 
     def discounted_total(self, percent):
         """Return the total after applying a percentage discount."""
-        return self.total_cost() - percent
+        if not 0 <= percent <= 100:
+            raise ValueError("Discount percentage must be between 0 and 100")
+        return self.total_cost() * (1 - percent / 100)
 
     def print_cart(self):
         if not self.items:
