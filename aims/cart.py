@@ -26,6 +26,14 @@ class Cart:
     def total_cost(self):
         return sum(item.cost for item in self.items)
 
+    def sort_by_title(self):
+        """Sort in place by title, case-insensitively; preserve ties."""
+        self.items.sort(key=lambda dvd: dvd.title.casefold())
+
+    def sort_by_cost(self):
+        """Sort in place by ascending cost; preserve ties."""
+        self.items.sort(key=lambda dvd: dvd.cost)
+
     def discounted_total(self, percent):
         """Return the total after applying a percentage discount."""
         if not 0 <= percent <= 100:
