@@ -6,6 +6,12 @@ phiên bản theo [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Added
+
+- `Cart.sort_by_title()` sắp xếp tại chỗ theo tựa đề không phân biệt hoa thường.
+- `Cart.sort_by_cost()` sắp xếp tại chỗ theo giá tăng dần; cả hai giữ thứ tự
+  tương đối khi khóa bằng nhau và không thay đổi tổng tiền.
+
 ## [1.0.0] - 2026-10-31
 
 Phiên bản phát hành Lab 04, tổng hợp chức năng và sửa lỗi từ Lab 01–03.
