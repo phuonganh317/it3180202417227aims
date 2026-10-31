@@ -20,5 +20,14 @@ class CartLimitTests(unittest.TestCase):
         self.assertEqual(cart.total_cost(), 20)
 
 
+class CartMessageTests(unittest.TestCase):
+    def test_addition_message_is_vietnamese_and_contains_title(self):
+        cart = Cart()
+        output = io.StringIO()
+        with contextlib.redirect_stdout(output):
+            self.assertTrue(cart.add_dvd(DigitalVideoDisc("Star Wars")))
+        self.assertEqual(output.getvalue(), "Đã thêm đĩa vào giỏ hàng: Star Wars\n")
+
+
 if __name__ == "__main__":
     unittest.main()

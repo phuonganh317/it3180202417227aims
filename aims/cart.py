@@ -12,7 +12,7 @@ class Cart:
             print("The cart is almost full")
             return False
         self.items.append(dvd)
-        print(f"The disc '{dvd.title}' has been added to the cart")
+        print(f"Đã thêm đĩa vào giỏ hàng: {dvd.title}")
         return True
 
     def remove_dvd(self, dvd):
