@@ -6,6 +6,8 @@ phiên bản theo [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-10-31
+
 ### Added
 
 - Tìm DVD theo category bằng `search_by_category`, không phân biệt hoa thường.
@@ -38,6 +40,7 @@ Phiên bản phát hành Lab 04, tổng hợp chức năng và sửa lỗi từ 
 - Tính giảm giá theo phần trăm, từ chối tỷ lệ ngoài 0–100 và NaN;
   giữ nguyên giá gốc, trả tổng 0 cho giỏ rỗng.
 
-[Unreleased]: https://github.com/phuonganh317/it3180202417227aims/compare/v1.0.0...master
+[Unreleased]: https://github.com/phuonganh317/it3180202417227aims/compare/v1.1.0...master
+[1.1.0]: https://github.com/phuonganh317/it3180202417227aims/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/phuonganh317/it3180202417227aims/releases/tag/v1.0.0
 [#7]: https://github.com/phuonganh317/it3180202417227aims/issues/7
