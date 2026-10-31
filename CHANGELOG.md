@@ -8,6 +8,7 @@ phiên bản theo [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Added
 
+- Tìm DVD theo category bằng `search_by_category`, không phân biệt hoa thường.
 - `Cart.sort_by_title()` sắp xếp tại chỗ theo tựa đề không phân biệt hoa thường.
 - `Cart.sort_by_cost()` sắp xếp tại chỗ theo giá tăng dần; cả hai giữ thứ tự
   tương đối khi khóa bằng nhau và không thay đổi tổng tiền.
